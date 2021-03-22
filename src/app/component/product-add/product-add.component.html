@@ -1,0 +1,69 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="title">Ürün ekle</h5></div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="productName">Ürün Adı:</label>
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                id="productName"
+                placeholder="Ürün Adı"
+                formControlName="productName"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-3">
+          <label for="categoryId">Kategori:</label>
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                id="categoryId"
+                placeholder="Kategori"
+                formControlName="categoryId"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-3">
+          <label for="unitsInStock">Stok Adedi:</label>
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                id="unitsInStock"
+                placeholder="Stok Adedi"
+                formControlName="unitsInStock"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-3">
+          <label for="unitPrice">Birim Fiyatı</label>
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                id="unitPrice"
+                placeholder="Fiyatı"
+                formControlName="unitPrice"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card-footer"> <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button></div>
+    </div>
+  </div>
+</div>
